@@ -15,6 +15,10 @@ public class PostServiceImpl implements PostService {
 
     private PostRepository postRepository;
 
+    public PostServiceImpl(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
+
     private Post mapDtoToEntity(PostDto postDto) {
         Post post = new Post();
         post.setTitle(postDto.getTitle());
