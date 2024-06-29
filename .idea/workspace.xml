@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0863643-4ad5-4f4a-8f84-478fb7670796" name="Changes" comment="Rest APIs to find comment by commentId of a particular post and update comment">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/exception/BlogAPIException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/service/CommentService.java" afterDir="false" />
@@ -96,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719086914003</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Rest APIs to find comment by commentId of a particular post and update comment">
+      <option name="closed" value="true" />
+      <created>1719260237981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719260237981</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
