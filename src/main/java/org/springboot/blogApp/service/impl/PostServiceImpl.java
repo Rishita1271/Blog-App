@@ -1,5 +1,6 @@
 package org.springboot.blogApp.service.impl;
 
+import org.modelmapper.ModelMapper;
 import org.springboot.blogApp.dto.PostDto;
 import org.springboot.blogApp.entity.Post;
 import org.springboot.blogApp.repository.PostRepository;
@@ -14,25 +15,27 @@ import java.util.stream.Collectors;
 public class PostServiceImpl implements PostService {
 
     private PostRepository postRepository;
+    private ModelMapper mapper;
 
-    public PostServiceImpl(PostRepository postRepository) {
+    public PostServiceImpl(PostRepository postRepository, ModelMapper mapper) {
         this.postRepository = postRepository;
+        this.mapper = mapper;
     }
 
     private Post mapDtoToEntity(PostDto postDto) {
-        Post post = new Post();
-        post.setTitle(postDto.getTitle());
-        post.setDescription(postDto.getDescription());
-        post.setContent(postDto.getContent());
+        Post post = mapper.map(postDto, Post.class);
+//        post.setTitle(postDto.getTitle());
+//        post.setDescription(postDto.getDescription());
+//        post.setContent(postDto.getContent());
         return post;
     }
 
     private PostDto mapEntityToDto(Post post) {
-        PostDto postResource = new PostDto();
-        postResource.setId(post.getId());
-        postResource.setTitle(post.getTitle());
-        postResource.setDescription(post.getDescription());
-        postResource.setContent(post.getContent());
+        PostDto postResource = mapper.map(post, PostDto.class);
+//        postResource.setId(post.getId());
+//        postResource.setTitle(post.getTitle());
+//        postResource.setDescription(post.getDescription());
+//        postResource.setContent(post.getContent());
         return postResource;
     }
 
