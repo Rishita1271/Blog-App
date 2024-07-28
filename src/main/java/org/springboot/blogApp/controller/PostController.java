@@ -1,5 +1,6 @@
 package org.springboot.blogApp.controller;
 
+import jakarta.validation.Valid;
 import org.springboot.blogApp.dto.PostDto;
 import org.springboot.blogApp.service.PostService;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,7 @@ public class PostController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<PostDto> createPost(@RequestBody PostDto postDto) {
+    public ResponseEntity<PostDto> createPost(@Valid @RequestBody PostDto postDto) {
         return new ResponseEntity<>(postService.createPost(postDto), HttpStatus.CREATED);
     }
 
@@ -34,7 +35,7 @@ public class PostController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<PostDto> getUpdatedPost(@RequestBody PostDto postDto, @PathVariable(name = "id") long id) {
+    public ResponseEntity<PostDto> getUpdatedPost(@Valid @RequestBody PostDto postDto, @PathVariable(name = "id") long id) {
         return new ResponseEntity<>(postService.updatePost(postDto, id), HttpStatus.OK);
     }
 

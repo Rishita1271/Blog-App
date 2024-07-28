@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0863643-4ad5-4f4a-8f84-478fb7670796" name="Changes" comment="Rest APIs to delete comment by commentId of a particular post">
+    <list default="true" id="d0863643-4ad5-4f4a-8f84-478fb7670796" name="Changes" comment="ModelMapper - Map Entity to Dto and vice versa">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/dto/ErrorDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/SpringbootBlogRestApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/SpringbootBlogRestApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/dto/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/dto/CommentDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/dto/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/dto/PostDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springboot/blogApp/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/SpringbootBlogRestApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/SpringbootBlogRestApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/dto/PostDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/dto/PostDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/entity/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/entity/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/service/impl/PostServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/springboot/blogApp/service/impl/PostServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719670583282</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ModelMapper - Map Entity to Dto and vice versa">
+      <option name="closed" value="true" />
+      <created>1719926640143</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719926640143</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -122,6 +136,7 @@
     <MESSAGE value="Rest APIs to find comment by commentId of a particular post" />
     <MESSAGE value="Rest APIs to find comment by commentId of a particular post and update comment" />
     <MESSAGE value="Rest APIs to delete comment by commentId of a particular post" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rest APIs to delete comment by commentId of a particular post" />
+    <MESSAGE value="ModelMapper - Map Entity to Dto and vice versa" />
+    <option name="LAST_COMMIT_MESSAGE" value="ModelMapper - Map Entity to Dto and vice versa" />
   </component>
 </project>
